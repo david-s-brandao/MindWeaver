@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+.border-gray-9C9C9C {
+  border-color: #9C9C9C;
+}
+.pacifico {
+  font-family: Pacifico, cursive;
+  font-weight: normal;
+}
+.text-gray-D9D9D9 {
+  color: #D9D9D9;
+}
+
+svg:hover {
+  fill: #9C9C9C;
+  transition: fill 0.2s ease-in-out;
+}
