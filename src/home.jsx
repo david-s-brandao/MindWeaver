@@ -1,28 +1,17 @@
 import logo from './assets/images/logo.png';
 import mindweaverCanvas from './assets/images/mindweaver-canvas.png';
-import { useState, lazy, Suspense } from 'react';
+import { useState } from 'react';
 import img1 from './assets/images/image1.png';
 import img2 from './assets/images/image2.png';
 import img3 from './assets/images/image3.png';
 import img4 from './assets/images/image4.png';
+import App from './App';
 
-const App = lazy(() => import('./App'));
 function HomePage() {
   const [showApp, setShowApp] = useState(false);
 
   if (showApp) {
-    return (
-      <Suspense fallback={
-        <div className="min-h-screen bg-gray-100 flex items-center justify-center">
-          <div className="text-center">
-            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto mb-4"></div>
-            <p className="text-gray-600">Loading MindWeaver...</p>
-          </div>
-        </div>
-      }>
-        <App />
-      </Suspense>
-    );
+    return <App />;
   }
 
   return (
