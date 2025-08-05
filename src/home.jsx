@@ -5,8 +5,12 @@ import img1 from './assets/images/image1.png';
 import img2 from './assets/images/image2.png';
 import img3 from './assets/images/image3.png';
 import img4 from './assets/images/image4.png';
-import App from './App';
-
+import App from './app.jsx';
+/*
+    NOTE: The correct import is './app.jsx' (lowercase 'a'), 
+    since your file is named 'app.jsx'. 
+    Remove or update any import that uses './App.jsx' (uppercase 'A').
+*/
 function HomePage() {
   const [showApp, setShowApp] = useState(false);
 
