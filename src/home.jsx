@@ -6,7 +6,7 @@ import img2 from './assets/images/image2.png';
 import img3 from './assets/images/image3.png';
 import img4 from './assets/images/image4.png';
 
-const App = lazy(() => import('./App.jsx'));
+const App = lazy(() => import('./App'));
 function HomePage() {
   const [showApp, setShowApp] = useState(false);
 
