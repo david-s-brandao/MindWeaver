@@ -1,6 +1,5 @@
-import { useEffect, useState, useCallback, useRef, Suspense } from 'react'
+import { useEffect, useState, useCallback, useRef } from 'react'
 import logo from './assets/images/logo.png'
-import HomePage from './home'
 function IconButton({ children, label, onClick }) {
   return (
     <button
